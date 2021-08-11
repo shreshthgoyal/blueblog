@@ -17,7 +17,7 @@ body {
   width: 300px;
   max-width: 300px;
   min-height: 590px;
-  position: relative;
+  position: fixed;
   text-align: center;
   margin: 50px;
   background: #fff;
@@ -72,7 +72,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: #fff;
 }
 .fb,
 .yt,

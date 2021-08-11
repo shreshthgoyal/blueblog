@@ -25,24 +25,14 @@ const Layout = ({ children }) => {
 
         <div style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 980,
           padding: `0 1.0875rem 1.45rem`,
           paddingRight: `2em`,
           marginTop: `55px`,
+          marginLeft: `50px`,
         }}
         >
           <main>{children}</main>
-          <footer
-            style={{
-              marginTop: `2rem`,
-            }}
-          >
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.com" style={{
-            color: `hsla(0, 0%, 0%, 0.8)`,
-        }}>Gatsby</a>
-        </footer>
       </div>
     </div>
     </>

@@ -2,19 +2,64 @@ html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
+  margin-right: 20px;
+  float: center;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
   font-feature-settings: "kern", "liga", "clig", "calt";
+  background: #aa4b6b;  /* fallback for old browsers */
+  background-size: 400% 400%;
+background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .blog {
   display: flex;
   position: relative;
   justify-content: space-between;
+  left: 5%;
+  z-index: 3;
+}
+
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  background: url("https://i.pinimg.com/originals/c6/ea/a1/c6eaa1ead770be2c765028ad082609db.png") repeat 0 0;
+  animation: bg-scrolling 5s infinite;
+  background-blend-mode: screen, difference, lighten;
+  animation-timing-function: linear;
+  
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: pink; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e75480; 
 }
