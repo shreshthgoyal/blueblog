@@ -29,18 +29,10 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
   z-index: 3;
 }
 
-@keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
 /* Main styles */
 body {
-  background: url("https://i.pinimg.com/originals/c6/ea/a1/c6eaa1ead770be2c765028ad082609db.png") repeat 0 0;
-  animation: bg-scrolling 5s infinite;
-  background-blend-mode: screen, difference, lighten;
-  animation-timing-function: linear;
-  
+  background: url("https://images.unsplash.com/photo-1536620752150-a7e9e62a62ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=80");
+  background-position: sticky;
 }
 
 ::-webkit-scrollbar {
